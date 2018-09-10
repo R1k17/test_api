@@ -5,9 +5,13 @@ const express = require('express');
 
  app.use(express.json());
 
- app.get('/api/*', (req, res) => {
-   res.json({ok: true});
- });
+ app.get('/', function (req, res) {
+  res.send('Hello World!');
+});
+
+//  app.get('/api/*', (req, res) => {
+//    res.json({ok: true});
+//  });
 
  app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
 
