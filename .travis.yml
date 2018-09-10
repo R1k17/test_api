@@ -1,0 +1,11 @@
+language: node_js
+node_js: node
+services:
+- mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: QcqhDWgqWqeEFkqiRGJjw2Hlg/6M/Wz0gFF6hUuhun1atO6poW7aMslWQwgHqSXJnPs+hBD82LCvk1mqSlnoS68bFcj2FK5EqYEsQEpoSqzWOz8Bv9j/CtWmb+KlOZS8vPwYbMaAb+SmMwiTBNMqr98PEknM6yqsGhOaW18AjTCmOeTX881aXxS+kx1T9ZNcVKP4/p8HhKnQs0k8NxpOjCPSEG8LWhkAswlMELSF83T33bi0s991AldxJA0bF1NjFHN+bGEPYV2D5zdqNMYhJrn9kOKTa0hfGkKN6t6GqnIty+1MfwPisml5N8AhXBowyO8iXIMBvkC6jNWbeP4t4OV3tVJ6fAzpuC3m6u5ysNVRhhtFam+g5ZVy7NjlXm/Pnu1LG4LZVCxicES9kzz9An32AzfqSQ7C+JbXG6WhFwRC1Fgkj+pWJvYBwmwjwdhjfXroUIfDlUO0b/7Z5+WSIEuU0AXMTMvVSIS/WIlaWU768beQ8AKPmHWxl6uhw7Xdr22xoq6Htc+biG15BSNtAxfU909fYtSYhBCnNM/5VLRDJ07miZijG1N/4xy13abfFdy8Q9Yl9dU8Y2GwbB6qStAIF6JQEKtbiRzvRKfA4x0uHsZklnavyq9NkgJ4pOOYnx/kNCpNvmek6UZsUWzCEdL3YQoT0ASvBTBuY4CfZbE=
+  app: enigmatic-springs-86506
+  on:
+    repo: R1k17/test_api
