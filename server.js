@@ -3,6 +3,8 @@ const express = require('express');
 
  const PORT = process.env.PORT || 3000;
 
+ app.use(express.json());
+
  app.get('/api/*', (req, res) => {
    res.json({ok: true});
  });
